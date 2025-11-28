@@ -202,7 +202,7 @@
       </li>
 
       <li class="book-item" data-id="5" tabindex="0" role="button" aria-pressed="false">
-        <div class="book-thumb">5</div>
+        <img class="book-thumb" src="libro5.jpg" alt="Portada del libro">
         <div class="book-meta">
           <p class="book-title">DINERO: DOMINA EL JUEGO</p>
           <p class="book-author">Tony Robbins</p>
@@ -335,7 +335,7 @@
     cover.textContent = b.coverText || '';
     title.textContent = b.title;
     author.textContent = b.author;
-    desc.textContent = b.desc;
+    desc.innerHTML = b.desc;
     moreLink.href = b.link || '#';
 
     if(focus){
