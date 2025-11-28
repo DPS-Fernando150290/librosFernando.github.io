@@ -170,7 +170,7 @@
     <ul class="book-list" id="bookList">
       <!-- Items generados por JS si quieres; aqui van ejemplos estáticos -->
       <li class="book-item" data-id="1" tabindex="0" role="button" aria-pressed="false">
-        <img class="cover" src="libro1.jpg" alt="Portada del libro">
+        <img class="book-thumb" src="libro1.jpg" alt="Portada del libro">
         <div class="book-meta">
           <p class="book-title">LOS TRUCOS DE LOS RICOS</p>
           <p class="book-author">Juan Haro</p>
@@ -258,7 +258,7 @@
       </ul>
     `,
     link: "#",
-    coverText: "libro2.jpg"
+    cover: "libro2.jpg"
   },
 
   3: {
@@ -283,7 +283,7 @@
       </ul>
     `,
     link: "#",
-    coverText: "libro3.jpg"
+    cover: "libro3.jpg"
   },
 
   4: {
@@ -293,7 +293,7 @@
       <p>La historia real de cómo un joven del sur de Londres llega a convertirse en uno de los traders más exitosos de Citibank gracias a su talento matemático.</p>
     `,
     link: "#",
-    coverText: "libro4.jpg"
+    cover: "libro4.jpg"
   },
 
   5: {
@@ -309,7 +309,7 @@
       </ul>
     `,
     link: "#",
-    coverText: "libro5.jpg"
+    cover: "libro5.jpg"
   }
 };
 
@@ -332,7 +332,7 @@
 
     const b = books[id];
     if(!b) return;
-    cover.textContent = b.coverText || '';
+    cover.src = b.cover;
     title.textContent = b.title;
     author.textContent = b.author;
     desc.innerHTML = b.desc;
